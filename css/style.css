@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grid_wrapper {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 70px 55px 200px 200px 100px;
+    grid-template-areas:
+    "hea hea hea"
+    "nav nav nav"
+    "se1 se1 se2"
+    "se3 se4 se4"
+    "foo foo foo"
+    ;
+}
+
+#mainh1 {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background: black;
+    grid-area: hea;
+    margin: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
