@@ -7,15 +7,13 @@
 #grid_wrapper {
 
     display: grid;
-    height: 100vh;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 70px 55px 200px 200px 100px;
+    height: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    "hea hea hea"
-    "nav nav nav"
-    "se1 se1 se2"
-    "se3 se4 se4"
-    "foo foo foo"
+    "se1 se1 se1"
+    "se2 se2 se2"
+    "ar1 ar2 ar3"
     ;
 }
 
@@ -37,11 +35,57 @@ li {
 header {
     background: black;
     grid-area: hea;
-    margin: 2px;
-
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-size: 1rem;
+    height: 100px;
+}
+
+
+#section_1 {
+    grid-area: se1;
+    background-color: brown;
+    height: 450px;
+}
+
+#section_2 {
+    grid-area: se2;
+    background-color: blue;
+    height: 150px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.75rem;
+}
+   
+
+#article_1 {
+    grid-area: ar1;
+    background-color: aqua;
+    height: 500px;
+    margin: 70px;
+
+}
+
+#article_2 {
+    grid-area: ar2;
+    background-color: antiquewhite;
+    height: 500px;
+    margin: 70px;
+
+}
+
+#article_3 {
+    grid-area: ar3;
+    background-color: black;
+    height: 500px;
+    margin: 70px;
+}
+
+
+footer{
+    height: 50px;
 }
