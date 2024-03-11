@@ -2,6 +2,74 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --burgerline_width: 30px;
+    --burgerline_height: 6px;
+    --burgerline_margin: 5px;
+    
+    --background_color: white;
+}
+#link_list {
+    background: var(--background_color);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 150px;
+    position: absolute;
+    top: -400px;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+.links_visible {
+    transform: translateY(500px);
+}
+
+#link_list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+    width: 200px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+#link_list a:hover {
+    background: black;
+    color: black;
+}
+
+.burger_line {
+    width: var(--burgerline_width);
+    height: var(--burgerline_height);
+    margin: var(--burgerline_margin);
+    background: black;
+    border-radius: 20%;
+    transition: all 0.5s;
+}
+
+.burger_in_x_form #burger_line_2 {
+    opacity: 0;
+}
+
+.burger_in_x_form #burger_line_1 {
+    transform: translateY(calc(var(--burgerline_height) + var(--burgerline_margin))) rotate(45deg);
+}
+
+.burger_in_x_form #burger_line_3 {
+    transform: translateY(calc((-1)*(var(--burgerline_height) + var(--burgerline_margin)))) rotate(-45deg);
+}
+
+#burger {
+    margin-left: 50px;
+    margin-right: 450px;
+    cursor: pointer;
 }
 
 #grid_wrapper {
@@ -18,9 +86,10 @@
 }
 
 #mainh1 {
-    color: white;
+    color: black;
     list-style: none;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 a {
@@ -33,35 +102,37 @@ li {
 }
 
 header {
-    background: black;
+    background-color: var(--background_color);
     grid-area: hea;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     height: 100px;
+    flex-direction: row-reverse;
 }
 
 
 #section_1 {
     grid-area: se1;
-    background-color: brown;
-    height: 450px;
+    background-image: url(/img/hotell1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
 }
 
 #section_2 {
     grid-area: se2;
-    background-color: blue;
-    height: 150px;
+    background-color: white;
+    height: 100px;
     display: grid;
     justify-content: center;
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 1.75rem;
+    color: black;
 }
    
-
 #article_1 {
     grid-area: ar1;
     background-color: aqua;
