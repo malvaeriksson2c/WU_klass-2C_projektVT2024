@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     height: 300px;
-    width: 150px;
+    width: 200px;
     position: absolute;
     top: -400px;
     align-items: center;
@@ -115,10 +115,12 @@ header {
 
 #section_1 {
     grid-area: se1;
-    background-image: url(/img/hotell1.jpg);
+    background-image: url(../img/hotell1.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
+
+    
 }
 
 #section_2 {
@@ -138,7 +140,9 @@ header {
     background-color: aqua;
     height: 500px;
     margin: 70px;
-
+    background-image: url(../img/gym.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 #article_2 {
@@ -146,6 +150,9 @@ header {
     background-color: antiquewhite;
     height: 500px;
     margin: 70px;
+    background-image: url(../img/restaurang.jpg);
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -154,9 +161,15 @@ header {
     background-color: black;
     height: 500px;
     margin: 70px;
+    background-image: url(../img/gym.jpg);
+    background-position: center;
+    background-size: cover;
+    
 }
 
 
 footer{
     height: 50px;
 }
+
+
