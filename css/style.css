@@ -126,50 +126,77 @@ header {
 #section_2 {
     grid-area: se2;
     background-color: white;
-    height: 100px;
-    display: grid;
+    height: 120px;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family:'Times New Roman', Times, serif;
     font-size: 1.75rem;
     color: black;
+    justify-content: bottom;
+    font-style: italic;
 }
    
-#article_1 {
+ #article_1 {
+    display: flex;
     grid-area: ar1;
     background-color: aqua;
     height: 500px;
-    margin: 70px;
-    background-image: url(../img/gym.jpg);
+    margin: 60px;
+    background-image: url(../img/pool.jpg);
     background-position: center;
     background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    font-style: italic
+    
 }
 
 #article_2 {
+    
+    display: flex;
     grid-area: ar2;
     background-color: antiquewhite;
     height: 500px;
-    margin: 70px;
-    background-image: url(../img/restaurang.jpg);
+    margin: 60px; 
+    background-image: url(../img/gym.jpg);
     background-position: center;
     background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    font-style: italic
 
 }
 
 #article_3 {
+
+    display: flex;
     grid-area: ar3;
     background-color: black;
     height: 500px;
-    margin: 70px;
-    background-image: url(../img/gym.jpg);
+    margin: 60px;
+    background-image: url(../img/restaurang.jpg);
     background-position: center;
     background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    font-style: italic
     
 }
 
 
 footer{
-    height: 50px;
+    background-color: aqua;
+    height: 5rem;
 }
 
-
+#hela {
+    display: flex;
+    flex-direction: column;
+}
