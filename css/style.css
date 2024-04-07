@@ -41,8 +41,8 @@
 }
 
 #link_list a:hover {
-    background: black;
-    color: black;
+    background: white;
+    color: rgb(209, 209, 28);
 }
 
 .burger_line {
@@ -85,6 +85,18 @@
     ;
 }
 
+#button {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    border-radius: 30px;
+}
+
 #mainh1 {
     color: black;
     list-style: none;
@@ -119,7 +131,7 @@ header {
     background-position: center;
     background-size: cover;
     height: 500px;
-
+    
     
 }
 
@@ -133,8 +145,6 @@ header {
     font-family:'Times New Roman', Times, serif;
     font-size: 1.75rem;
     color: black;
-    justify-content: bottom;
-    font-style: italic;
 }
    
  #article_1 {
@@ -150,7 +160,8 @@ header {
     color: white;
     font-size: 30px;
     justify-content: center;
-    font-style: italic
+    font-style: italic;
+    border-radius: 10px;
     
 }
 
@@ -168,7 +179,8 @@ header {
     color: white;
     font-size: 30px;
     justify-content: center;
-    font-style: italic
+    font-style: italic;
+    border-radius: 10px;
 
 }
 
@@ -186,17 +198,412 @@ header {
     color: white;
     font-size: 30px;
     justify-content: center;
-    font-style: italic
+    font-style: italic;
+    border-radius: 10px;
     
 }
 
-
 footer{
-    background-color: aqua;
+    background-color: lightyellow;
     height: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
 }
 
 #hela {
     display: flex;
     flex-direction: column;
 }
+
+#grid_wrapper2 {
+
+        display: grid;
+        height: 1900px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "se1"
+        "se2"
+        "se3"
+        "se4"
+        "se5"
+        ;
+    }
+    
+    #mainh1 {
+        color: black;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+      
+    }
+    
+    a {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    header {
+        background-color: var(--background_color);
+        grid-area: hea;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1rem;
+        height: 100px;
+        flex-direction: row-reverse;
+    }
+    
+    
+    #section1 {
+        grid-area: se1;
+        background-image: url(../img/restaurang1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+        color: white;
+        
+    }
+    
+    #section2 {
+        grid-area: se2;
+        background-color: white;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 40px;
+        color: black;
+
+    }
+       
+     #section3 {
+        
+        display: flex;
+        grid-area: se3;
+        height: 400px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        font-style: italic
+        
+    }
+    
+    #section4 {
+        
+        display: flex;
+        grid-area: se4;
+        height: 400px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 25px;
+        justify-content: center;
+        font-style: italic;
+        text-align: center;
+    
+    }
+    
+    #section5 {
+    
+        display: flex;
+        grid-area: se5;
+        height: 400px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 25px;
+        justify-content: center;
+        font-style: italic;
+        text-align: center;
+        
+    }
+    
+    footer{
+        background-color: lightyellow;
+        height: 5rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    #grid_wrapper3 {
+
+        display: grid;
+        height: 1375px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "se1 se2"
+        "se3 se4"
+        "se5 se6"
+        ;
+    }
+    
+    #mainh1 {
+        color: black;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+      
+    }
+    
+    a {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    header {
+        background-color: var(--background_color);
+        grid-area: hea;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1rem;
+        height: 100px;
+        flex-direction: row-reverse;
+    }
+    
+    
+    #section1_3 {
+        grid-area: se1;
+        background-image: url(../img/pool.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        margin: 30px;
+        
+    }
+    
+    #section2_3 {
+        grid-area: se2;
+        background-color: white;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        font-style: italic;
+        
+
+    }
+       
+     #section3_3 {
+        
+        display: flex;
+        grid-area: se3;
+        height: 400px;
+        background-image: url(../img/gym.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 30px;
+    }
+    
+    #section4_3 {
+        
+        display: flex;
+        grid-area: se4;
+        height: 400px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        align-items: center;
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        font-style: italic;
+    
+    }
+    
+    #section5_3 {
+    
+        display: flex;
+        grid-area: se5;
+        height: 400px;
+        background-image: url(../img/restaurang1.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 30px;
+    
+    }
+
+    #section6_3 {
+    
+        display: flex;
+        grid-area: se6;
+        height: 400px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 25px;
+        justify-content: center;
+        font-style: italic;
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+    footer{
+        background-color: lightyellow;
+        height: 5rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    #grid_wrapper4 {
+
+        display: grid;
+        height: 1200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "se1 se1 se2"
+        "se3 se3 se4"
+        "se5 se5 se6"
+        ;
+    }
+    
+    #mainh1 {
+        color: black;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+      
+    }
+    
+    a {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    header {
+        background-color: var(--background_color);
+        grid-area: hea;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1rem;
+        height: 100px;
+        flex-direction: row-reverse;
+    }
+    
+    
+    #section1_4 {
+        grid-area: se1;
+        height: 400px;
+        padding-left: 70px;
+        margin: 50px;
+    }
+
+    #section2_4 {
+        display: flex;
+        grid-area: se2;
+        height: 250px;
+        background-image: url(../img/hotellrum1.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 50px;
+        margin-right: 100px;
+        padding: 150px;
+        margin-bottom: 20px;
+    
+    }
+       
+     #section3_4 {
+        display: flex;
+        grid-area: se3;
+        height: 400px;
+        justify-content: left;
+        font-size: 20px;
+        margin-left: 120px;
+    
+    }
+
+    
+    #section4_4 {
+
+        display: flex;
+        grid-area: se4;
+        height: 250px;
+        background-image: url(../img/rum2.jpg);
+        background-position: top;
+        background-size: cover;
+        margin-right: 100px;
+        padding: 150px;
+        margin-left: 50px;
+    }
+
+    #section5_4 {
+        
+        display: flex;
+        grid-area: se5;
+        height: 250px;
+        background-image: url(../img/heart1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #section6_4 {
+        
+        display: flex;
+        grid-area: se6;
+        height: 250px;
+        background-image: url(../img/sovrum3.jpg);
+        background-position: top;
+        background-size: cover;
+        margin-right: 100px;
+        padding: 120px;
+        margin-left: 50px;
+    
+    }
+    
+    footer{
+        background-color: lightyellow;
+        height: 5rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+    }
+
+
+    /* telefonanpassning */
+
+    @media screen and (max-width: 800px) {
+        
+        #huvudsida{
+
+        }
+    }
